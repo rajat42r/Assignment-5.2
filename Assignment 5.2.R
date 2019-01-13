@@ -1,0 +1,14 @@
+mtcars
+vec1<-c(rownames(mtcars[1:15,]))
+vec2<-c(rownames(mtcars[10:32,]))
+library(dplyr)
+#1
+union(vec1,vec2)
+#2
+intersect(vec1,vec2)
+#3
+setdiff(vec1,vec2)
+#4
+vec1<-c(rownames(mtcars[1:15,]))
+vec2<-c(rownames(mtcars[11:25,]))
+setequal(vec1,vec2)
